@@ -1,0 +1,7 @@
+# Ignore env files
+sumsub_frontend/.env
+sumsub_backend/.env
+
+# Ignore node_modules folders
+sumsub_frontend/node_modules/
+sumsub_backend/node_modules/
