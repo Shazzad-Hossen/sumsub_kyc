@@ -6,7 +6,7 @@ const Verify = () => {
     const [accessToken, setAccessToken] = useState('');
 
     useEffect(() => {
-        axios.get('http://localhost:4000/generate-token').then(res => {
+        axios.get(import.meta.env.VITE_SERVER_URL+'/generate-token').then(res => {
             console.log(res.data);
             setAccessToken(res.data.token);
         }).catch(err => {
