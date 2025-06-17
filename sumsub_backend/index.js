@@ -31,8 +31,7 @@ app.get("/generate-token", (req, res) => {
       method: method,
       headers: {
         "content-type": "application/json",
-        "X-App-Token":
-          "sbx:2ojMhCvDo4u1kESIvsbKcNcP.zTcQT0DU1mixwZyuRAcrGgz7xf1khGxR",
+        "X-App-Token": process.env.TOKEN,
         "X-App-Access-Sig": sig,
         "X-App-Access-Ts": ts,
       },
